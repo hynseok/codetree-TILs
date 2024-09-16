@@ -8,9 +8,9 @@
 |기록분류|이름|티어|유형|상태|최근 제출 코드|
 |---|---|---|---|---|---|
 |기출문제|[바이러스 검사](https://www.codetree.ai/training-field/frequent-problems/problems/virus-detector)|![Bronze2][b2]|`Greedy`|![Passed][passed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240915/%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4%20%EA%B2%80%EC%82%AC/virus-detector.cpp)|
-|기출문제|[2개의 사탕](https://www.codetree.ai/training-field/frequent-problems/problems/two-candies)|![Gold1][g1]|`Backtracking` `Simulation`|![Failed][failed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240915/2%EA%B0%9C%EC%9D%98%20%EC%82%AC%ED%83%95/two-candies.cpp)|
-|기출문제|[정육면체 굴리기](https://www.codetree.ai/training-field/frequent-problems/problems/cube-rounding)|![Gold4][g4]|`Simulation`|![Failed][failed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240915/%EC%A0%95%EC%9C%A1%EB%A9%B4%EC%B2%B4%20%EA%B5%B4%EB%A6%AC%EA%B8%B0/cube-rounding.cpp)|
-|기출문제|[2048 게임](https://www.codetree.ai/training-field/frequent-problems/problems/2048-game)|![Gold2][g2]|`Simulation` `Backtracking`|![Failed][failed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240915/2048%20%EA%B2%8C%EC%9E%84/2048-game.cpp)|
+|기출문제|[2개의 사탕](https://www.codetree.ai/training-field/frequent-problems/problems/two-candies)|![Gold1][g1]|`Backtracking` `Simulation`|![Passed][passed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240915/2%EA%B0%9C%EC%9D%98%20%EC%82%AC%ED%83%95/two-candies.rs)|
+|기출문제|[정육면체 굴리기](https://www.codetree.ai/training-field/frequent-problems/problems/cube-rounding)|![Gold4][g4]|`Simulation`|![Passed][passed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240915/%EC%A0%95%EC%9C%A1%EB%A9%B4%EC%B2%B4%20%EA%B5%B4%EB%A6%AC%EA%B8%B0/cube-rounding.rs)|
+|기출문제|[2048 게임](https://www.codetree.ai/training-field/frequent-problems/problems/2048-game)|![Gold2][g2]|`Simulation` `Backtracking`|![Passed][passed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240915/2048%20%EA%B2%8C%EC%9E%84/2048-game.rs)|
 
 
 
