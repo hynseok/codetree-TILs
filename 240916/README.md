@@ -7,7 +7,7 @@
 
 |기록분류|이름|티어|유형|상태|최근 제출 코드|
 |---|---|---|---|---|---|
-|기출문제|[테트리스 블럭 안의 합 최대화 하기](https://www.codetree.ai/training-field/frequent-problems/problems/max-sum-of-tetris-block)|![Gold4][g4]|`Simulation`|![Failed][failed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240916/%ED%85%8C%ED%8A%B8%EB%A6%AC%EC%8A%A4%20%EB%B8%94%EB%9F%AD%20%EC%95%88%EC%9D%98%20%ED%95%A9%20%EC%B5%9C%EB%8C%80%ED%99%94%20%ED%95%98%EA%B8%B0/max-sum-of-tetris-block.cpp)|
+|기출문제|[테트리스 블럭 안의 합 최대화 하기](https://www.codetree.ai/training-field/frequent-problems/problems/max-sum-of-tetris-block)|![Gold4][g4]|`Simulation`|![Passed][passed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240916/%ED%85%8C%ED%8A%B8%EB%A6%AC%EC%8A%A4%20%EB%B8%94%EB%9F%AD%20%EC%95%88%EC%9D%98%20%ED%95%A9%20%EC%B5%9C%EB%8C%80%ED%99%94%20%ED%95%98%EA%B8%B0/max-sum-of-tetris-block.rs)|
 
 
 
