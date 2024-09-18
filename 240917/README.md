@@ -7,7 +7,7 @@
 
 |기록분류|이름|티어|유형|상태|최근 제출 코드|
 |---|---|---|---|---|---|
-|기출문제|[외주 수익 최대화하기](https://www.codetree.ai/training-field/frequent-problems/problems/max-of-outsourcing-profit)|![Silver3][s3]|`Backtracking`|![Failed][failed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240917/%EC%99%B8%EC%A3%BC%20%EC%88%98%EC%9D%B5%20%EC%B5%9C%EB%8C%80%ED%99%94%ED%95%98%EA%B8%B0/max-of-outsourcing-profit.cpp)|
+|기출문제|[외주 수익 최대화하기](https://www.codetree.ai/training-field/frequent-problems/problems/max-of-outsourcing-profit)|![Silver3][s3]|`Backtracking`|![Passed][passed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240917/%EC%99%B8%EC%A3%BC%20%EC%88%98%EC%9D%B5%20%EC%B5%9C%EB%8C%80%ED%99%94%ED%95%98%EA%B8%B0/max-of-outsourcing-profit.rs)|
 
 
 
