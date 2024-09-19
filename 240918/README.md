@@ -7,7 +7,7 @@
 
 |기록분류|이름|티어|유형|상태|최근 제출 코드|
 |---|---|---|---|---|---|
-|기출문제|[자율주행 자동차](https://www.codetree.ai/training-field/frequent-problems/problems/autonomous-driving)|![Gold5][g5]|`Simulation`|![Failed][failed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240918/%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89%20%EC%9E%90%EB%8F%99%EC%B0%A8/autonomous-driving.cpp)|
+|기출문제|[자율주행 자동차](https://www.codetree.ai/training-field/frequent-problems/problems/autonomous-driving)|![Gold5][g5]|`Simulation`|![Passed][passed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240918/%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89%20%EC%9E%90%EB%8F%99%EC%B0%A8/autonomous-driving.rs)|
 
 
 
