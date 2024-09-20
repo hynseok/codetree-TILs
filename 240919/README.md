@@ -7,7 +7,7 @@
 
 |기록분류|이름|티어|유형|상태|최근 제출 코드|
 |---|---|---|---|---|---|
-|기출문제|[방화벽 설치하기](https://www.codetree.ai/training-field/frequent-problems/problems/firewall-installation)|![Gold4][g4]|`Backtracking` `BFS`|![Failed][failed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240919/%EB%B0%A9%ED%99%94%EB%B2%BD%20%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/firewall-installation.cpp)|
+|기출문제|[방화벽 설치하기](https://www.codetree.ai/training-field/frequent-problems/problems/firewall-installation)|![Gold4][g4]|`Backtracking` `BFS`|![Passed][passed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240919/%EB%B0%A9%ED%99%94%EB%B2%BD%20%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/firewall-installation.cpp)|
 
 
 
