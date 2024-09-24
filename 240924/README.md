@@ -7,8 +7,8 @@
 
 |기록분류|이름|티어|유형|상태|최근 제출 코드|
 |---|---|---|---|---|---|
-|기출문제|[코드트리 투어](https://www.codetree.ai/training-field/frequent-problems/problems/codetree-tour)|![Gold2][g2]|`Priority Queue` `Dijkstra` `Recursion`|![Failed][failed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240924/%EC%BD%94%EB%93%9C%ED%8A%B8%EB%A6%AC%20%ED%88%AC%EC%96%B4/codetree-tour.cpp)|
-|기출문제|[조삼모사](https://www.codetree.ai/training-field/frequent-problems/problems/three-at-dawn-and-four-at-dusk)|![Silver2][s2]|`Backtracking`|![Failed][failed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240924/%EC%A1%B0%EC%82%BC%EB%AA%A8%EC%82%AC/three-at-dawn-and-four-at-dusk.cpp)|
+|기출문제|[코드트리 투어](https://www.codetree.ai/training-field/frequent-problems/problems/codetree-tour)|![Gold2][g2]|`Priority Queue` `Dijkstra` `Recursion`|![Passed][passed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240924/%EC%BD%94%EB%93%9C%ED%8A%B8%EB%A6%AC%20%ED%88%AC%EC%96%B4/codetree-tour.rs)|
+|기출문제|[조삼모사](https://www.codetree.ai/training-field/frequent-problems/problems/three-at-dawn-and-four-at-dusk)|![Silver2][s2]|`Backtracking`|![Passed][passed]|[링크](https://github.com/hynseok/codetree-TILs/blob/main/240924/%EC%A1%B0%EC%82%BC%EB%AA%A8%EC%82%AC/three-at-dawn-and-four-at-dusk.rs)|
 
 
 
