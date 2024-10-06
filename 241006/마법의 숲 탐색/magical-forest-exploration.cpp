@@ -9,7 +9,6 @@ struct golem {
 	int x;
 	int dir; // 0: 북, 1: 동, 2: 남, 3: 서
 };
-queue<golem> golems;
 
 int dy[4] = {-1, 0, 1, 0};
 int dx[4] = {0, 1, 0, -1};
@@ -83,71 +82,11 @@ void down(golem* g){
 	}
 }
 
-void go() {
-	queue<golem> q; // for bfs
-	golem g = golems.front();
-	golems.pop();
-	
-	down(&g);
-
-	if(g.y < 3) {
-		clear_map();
-		return;
-	}
-
-	map[g.y][g.x] = g.id;
-	for(int i = 0; i < 4; i++) {
-		int ny = g.y + dy[i];
-		int nx = g.x + dx[i];
-		map[ny][nx] = g.id;
-		if(i == g.dir) 
-			map[ny][nx] = -1 * g.id;
-	}
-
-	clear_visited();
-	int local_score = 0;
-	q.push(g);
-	while(!q.empty()) {
-		golem tg = q.front();
-		q.pop();
-		visited[tg.y][tg.x] = 1;
-		if(tg.y - 1 > local_score) { 
-			local_score = tg.y - 1;
-		}
-		for(int i = 0; i < 4; i++) {
-			golem ng;
-			int ny = tg.y + dy[i];
-			int nx = tg.x + dx[i];
-
-			if(visited[ny][nx]) continue;
-			if(ny < 0 || nx < 0 || ny >= r+2 || nx >= c) continue;
-			if(map[ny][nx] != tg.id) {
-				if(map[ny][nx] < 0 && -1 * map[ny][nx] == tg.id) {
-					ng.y = ny; ng.x = nx; ng.id = map[ny][nx];
-					q.push(ng);
-					continue;
-				}
-				if(tg.id < 0) {
-					if(map[ny][nx] != 0) {
-						ng.y = ny; ng.x = nx; ng.id = map[ny][nx];
-						q.push(ng);
-						continue;
-					}
-				}
-				continue;
-			}
-
-			ng.y = ny; ng.x = nx; ng.id = tg.id;
-			q.push(ng);
-		}
-	}
-	
-	score += local_score;
-}
-
 int main() {
+	queue<golem> golems;
+
 	cin >> r >> c >> k;
-		
+	
 	int row, dir;
 	for(int i = 0; i < k; i++) {
 		cin >> row >> dir;
@@ -161,7 +100,65 @@ int main() {
 	}
 
 	while(!golems.empty()){
-		go();
+		queue<golem> q; // for bfs
+		golem g = golems.front();
+		golems.pop();
+
+		down(&g);
+
+		if(g.y < 3) {
+			clear_map();
+			continue;
+		}
+
+		map[g.y][g.x] = g.id;
+		for(int i = 0; i < 4; i++) {
+			int ny = g.y + dy[i];
+			int nx = g.x + dx[i];
+			map[ny][nx] = g.id;
+			if(i == g.dir) 
+				map[ny][nx] = -1 * g.id;
+		}
+
+		clear_visited();
+		int local_score = 0;
+		q.push(g);
+		while(!q.empty()) {
+			golem tg = q.front();
+			q.pop();
+			visited[tg.y][tg.x] = 1;
+			if(tg.y - 1 > local_score) { 
+				local_score = tg.y - 1;
+			}
+			for(int i = 0; i < 4; i++) {
+				golem ng;
+				int ny = tg.y + dy[i];
+				int nx = tg.x + dx[i];
+
+				if(visited[ny][nx]) continue;
+				if(ny < 0 || nx < 0 || ny >= r+2 || nx >= c) continue;
+				if(map[ny][nx] != tg.id) {
+					if(map[ny][nx] < 0 && -1 * map[ny][nx] == tg.id) {
+						ng.y = ny; ng.x = nx; ng.id = map[ny][nx];
+						q.push(ng);
+						continue;
+					}
+					if(tg.id < 0) {
+						if(map[ny][nx] != 0) {
+							ng.y = ny; ng.x = nx; ng.id = map[ny][nx];
+							q.push(ng);
+							continue;
+						}
+					}
+					continue;
+				}
+
+				ng.y = ny; ng.x = nx; ng.id = tg.id;
+				q.push(ng);
+			}
+		}
+
+		score += local_score;
 	}
 
 	cout << score << "\n";
