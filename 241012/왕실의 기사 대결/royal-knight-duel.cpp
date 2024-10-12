@@ -72,6 +72,7 @@ void move(int id, int dir) {
   }
 
   int attacker = id;
+  int new_map[MAX_L][MAX_L] = {0, };
   while(!knight_ids.empty()) {
     int id = knight_ids.back();
     knight_ids.pop_back();
@@ -79,9 +80,11 @@ void move(int id, int dir) {
     
     for(int i = kni.y; i < kni.y + kni.h; i++) {
       for(int j = kni.x; j < kni.x + kni.w; j++) {
-        k_map[i][j] = 0;
+        if(k_map[i][j] == id)
+          k_map[i][j] = 0;
       }
     }
+
     for(int i = kni.y + dy[dir]; i < kni.y + kni.h + dy[dir]; i++) {
       for(int j = kni.x + dx[dir]; j < kni.x + kni.w + dx[dir]; j++) {
         k_map[i][j] = id;
