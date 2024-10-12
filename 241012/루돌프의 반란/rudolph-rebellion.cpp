@@ -205,9 +205,6 @@ int main() {
 
   for(int i = 0; i < m; i++) {
     move_rudolf();
-    for(int j = 0; j < p; j++) {
-      cout << santas[j].score << " ";
-    } cout << "\n";
     move_santa();
     
     int out = 0; 
@@ -219,9 +216,6 @@ int main() {
       }
     }
     if(out == p) break; 
-    for(int j = 0; j < p; j++) {
-      cout << santas[j].score << " ";
-    } cout << "\n";
   }
 
   for(int i = 0; i < p; i++) {
