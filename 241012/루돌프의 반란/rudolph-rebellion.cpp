@@ -90,22 +90,29 @@ void move_rudolf() {
     }
     s.is_stun = 2;
     if(map[s.y][s.x] > 0) {
-      bool flag = true;
-      santa &ns = santas[map[s.y][s.x]-1];
-      while(flag) {
-        ns.y = ns.y + dy[dir];
-        ns.x = ns.x + dx[dir];
-
-        if(ns.y < 0 || ns.x < 0 || ns.y >= n || ns.x >= n) {
-          ns.is_out = true;
+      int ny = s.y, nx=s.x;
+      vector<pair<int, int> > pos;
+      pos.push_back(make_pair(ny,nx));
+      while(true) {
+        ny = ny + dy[dir];
+        nx = nx + dx[dir];
+        if(ny < 0 || nx < 0 || ny >= n || nx >= n || map[ny][nx] == 0) {
           break;
         }
+        pos.push_back(make_pair(ny,nx));
+      }
+      while(!pos.empty()) {
+        pair<int,int> p = pos.back();
+        pos.pop_back();
 
-        if(map[ns.y][ns.x] > 0) {
-          ns = santas[map[ns.y][ns.x] - 1];
-        } else {
-          flag = false;
+        santa &ns = santas[map[p.first][p.second]-1];
+        ny = p.first + dy[dir];
+        nx = p.second + dx[dir];
+        if(ny < 0 || nx < 0 || ny >= n || nx >= n) {
+          ns.is_out = true;
+          continue;
         }
+        ns.y = ny; ns.x = nx;
         map[ns.y][ns.x] = ns.id;
       }
       map[s.y][s.x] = s.id;
@@ -158,22 +165,29 @@ void move_santa() {
       s.is_stun = 1;
 
       if(map[s.y][s.x] > 0) {
-        bool flag = true;
-        santa &ns = santas[map[s.y][s.x]-1];
-        while(flag) {
-          ns.y = ns.y + dy[ndir];
-          ns.x = ns.x + dx[ndir];
-
-          if(ns.y < 0 || ns.x < 0 || ns.y >= n || ns.x >= n) {
-            ns.is_out = true;
+        int ny = s.y, nx=s.x;
+        vector<pair<int, int> > pos;
+        pos.push_back(make_pair(ny,nx));
+        while(true) {
+          ny = ny + dy[ndir];
+          nx = nx + dx[ndir];
+          if(ny < 0 || nx < 0 || ny >= n || nx >= n || map[ny][nx] == 0) {
             break;
           }
+          pos.push_back(make_pair(ny,nx));
+        }
+        while(!pos.empty()) {
+          pair<int,int> p = pos.back();
+          pos.pop_back();
 
-          if(map[ns.y][ns.x] > 0) {
-            ns = santas[map[ns.y][ns.x] - 1];
-          } else {
-            flag = false;
+          santa &ns = santas[map[p.first][p.second]-1];
+          ny = p.first + dy[ndir];
+          nx = p.second + dx[ndir];
+          if(ny < 0 || nx < 0 || ny >= n || nx >= n) {
+            ns.is_out = true;
+            continue;
           }
+          ns.y = ny; ns.x = nx;
           map[ns.y][ns.x] = ns.id;
         }
         map[s.y][s.x] = s.id;
@@ -205,8 +219,7 @@ int main() {
 
   for(int i = 0; i < m; i++) {
     move_rudolf();
-    move_santa();
-    
+    move_santa();  
     int out = 0; 
     for(int j = 0; j < p; j++) {
       if(!santas[j].is_out) {
